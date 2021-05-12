@@ -1,0 +1,39 @@
+{
+  "total": {
+    "ETH": 13.026933546011824,
+    "net": {
+      "sign": "+",
+      "value": 12199.03
+    }
+  },
+  "tokens": {
+    "ETH": {
+      "balance": 9.026180266011824,
+      "name": "Ether",
+      "icon": "https://cryptoicon-api.vercel.app/api/icon/eth",
+      "url": "https://ethereum.org",
+      "net": {
+        "sign": "+",
+        "value": 12344.89
+      },
+      "recent": {
+        "sign": "+",
+        "value": 123.12
+      }
+    },
+    "UNI": {
+      "balance": 78.03555334437355,
+      "name": "Uniswap",
+      "icon": "https://cryptoicon-api.vercel.app/api/icon/uni",
+      "url": "https://uniswap.org",
+      "net": {
+        "sign": "+",
+        "value": 1098.55
+      },
+      "recent": {
+        "sign": "+",
+        "value": 12.34
+      }
+    }
+  }
+}

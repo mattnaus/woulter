@@ -1,0 +1,11 @@
+<style global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    body {
+      @apply text-gray-700;
+    }
+  }
+</style>

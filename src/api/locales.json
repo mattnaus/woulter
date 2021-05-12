@@ -1,0 +1,15 @@
+{
+  "cryptos": ["ETH", "BTC"],
+  "currencies": [
+    { "code": "EUR", "symbol": "€" },
+    { "code": "USD", "symbol": "$" },
+    { "code": "GBP", "symbol": "#" },
+    { "code": "JPY", "symbol": "#" }
+  ],
+  "rates": {
+    "EUR": "1",
+    "USD": "1.23",
+    "GBP": "0.89",
+    "JPY": "1.89"
+  }
+}

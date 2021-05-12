@@ -9,8 +9,6 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "rollup-plugin-node-polyfills": "^0.2.1",
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.2",
     "postcss-load-config": "^3.0.0",
@@ -24,9 +22,7 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.2.1",
     "sirv-cli": "^1.0.0",
-    "svavatar": "^1.0.4",
-    "svelte-routing": "^1.5.0"
+    "@rollup/plugin-json": "^4.1.0"
   }
 }

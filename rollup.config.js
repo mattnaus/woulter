@@ -86,5 +86,34 @@ export default [
     watch: {
       clearScreen: false,
     },
+  }, // Server bundle
+  {
+    input: "src/App.svelte",
+    output: {
+      sourcemap: false,
+      format: "cjs",
+      name: "app",
+      file: "public/App.js",
+    },
+    plugins: [
+      svelte({
+        preprocess: sveltePreprocess({ postcss: true }),
+        compilerOptions: {
+          generate: "ssr",
+        },
+      }),
+      // we'll extract any component CSS out into
+      // a separate file - better for performance
+      css({ output: "bundle.css" }),
+
+      resolve({
+        browser: true,
+        dedupe: ["svelte"],
+      }),
+      commonjs(),
+      json(),
+      nodePolyfills(),
+      !isDev && terser(),
+    ],
   },
 ];

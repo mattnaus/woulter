@@ -3,7 +3,6 @@
 	import { Router, Route, Link } from "svelte-routing";
 	import { fade } from 'svelte/transition';
 	import defaultWallet from './api/wallet.json';
-	import Identicon from './components/Identicon.svelte';
 	import defaultLocales from './api/locales.json';
 	import defaultRates from './api/rates.json';
 	import { clickOutside } from './utils/clickOutside.js';
@@ -120,7 +119,7 @@
 		<div class="h-24 flex items-center justify-between">
 			<div class="relative">
 				<a class="flex flex-row p-3 cursor-pointer rounded-2xl">
-					<div class="mr-2"><Identicon address="{walletAddr}" width="40" height="40" /></div>
+					<div class="mr-2"><img src="https://identicon-api.herokuapp.com/{walletAddr}/45?format=png"></div>
 					<div class="mr-4">
 						<p class="overflow-ellipsis	max-w-120 overflow-hidden font-bold">{walletAddr}</p>
 						<p class="text-gray-400 text-sm font-semibold">Ethereum</p>

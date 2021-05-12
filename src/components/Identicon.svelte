@@ -8,4 +8,4 @@
 
 </script>
 
-<Svavatar type="gridy" mood="happy" seed={address} width={width} height={height} />
+<img width="{width}" height="{height}" src="https://identicon-api.herokuapp.com/{address}/{width}?format=svg">

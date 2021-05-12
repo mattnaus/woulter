@@ -97,12 +97,22 @@ export default [
     },
     plugins: [
       svelte({
+        preprocess: sveltePreprocess({ postcss: true }),
         compilerOptions: {
           generate: "ssr",
         },
       }),
-      resolve(),
+      // we'll extract any component CSS out into
+      // a separate file - better for performance
+      css({ output: "bundle.css" }),
+
+      resolve({
+        browser: true,
+        dedupe: ["svelte"],
+      }),
       commonjs(),
+      json(),
+      nodePolyfills(),
       !isDev && terser(),
     ],
   },
